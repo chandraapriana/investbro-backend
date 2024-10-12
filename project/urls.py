@@ -19,5 +19,6 @@ from django.urls import path
 from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('stock/us/', views.post_stock_data, name='postStockData'),
+
 ]
