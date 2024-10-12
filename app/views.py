@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpRequest
 from django.views.decorators.csrf import csrf_exempt
 from django.core.cache import cache  # Import cache
 import yfinance as yf
@@ -9,6 +9,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 VALID_PERIODS = [
     "1d", "5d", "1mo", "3mo", "6mo", "1y", "2y", "5y", "10y", "ytd", "max"
 ]
+
+
 
 CACHE_TIMEOUT = 60 * 5  # Waktu cache selama 5 menit (300 detik)
 
@@ -28,9 +30,14 @@ def validate_input(item):
     if not period and (not start_date or not end_date):
         return False, 'You must provide either period or both start_date and end_date'
     
+    # Validasi periode untuk saham
     if period and period not in VALID_PERIODS:
         return False, f'Invalid period. Valid periods are: {", ".join(VALID_PERIODS)}'
-    
+
+    # # Validasi periode untuk cryptocurrency
+    # if period and period not in VALID_CRYPTO_PERIODS:
+    #     return False, f'Invalid period for crypto. Valid periods are: {", ".join(VALID_CRYPTO_PERIODS)}'
+
     if start_date and end_date:
         try:
             start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').date()
@@ -75,25 +82,37 @@ def fetch_stock_data(name, start_date=None, end_date=None, period=None):
 def convert_history_to_dict(hist):
     return {date.strftime('%Y-%m-%d'): value for date, value in hist['Close'].items()}
 
+# Fungsi baru untuk memanggil post_stock_data dengan nama yang diperbarui
+def post_stock_data_with_updated_names(data):
+    request = type('Request', (object,), {})()  # Membuat objek request baru
+    request.method = 'POST'
+    request.body = json.dumps(data).encode('utf-8')  # Encode string JSON menjadi bytes
+    request.META = {'CONTENT_TYPE': 'application/json'}  # Set content type
+
+    # Panggil fungsi post_stock_data yang sudah ada
+    return post_stock_data(request)
+
 # Fungsi yang dijalankan paralel untuk setiap saham
-def process_stock(item):
+def process_asset(item):
     valid, error_message = validate_input(item)
     if not valid:
         return None, {'error': error_message}, 400
 
+    # Tentukan nama dan modifikasi sesuai jenis aset
     name = item['name']
+    original_name = item['name'].replace('.JK', '').replace("-USD","") 
     start_date = item.get('start_date')
     end_date = item.get('end_date')
     period = item.get('period')
 
-    # Ambil data saham dengan caching
+    # Ambil data aset dengan caching
     hist = fetch_stock_data(name, start_date, end_date, period)
 
     if hist.empty:
-        return None, {'error': f'No data found for {name} in the given range or period'}, 404
+        return None, {'error': f'No data found for {item["name"]} in the given range or period'}, 404
 
     # Konversi hasil ke dictionary
-    return name, convert_history_to_dict(hist), 200
+    return original_name, convert_history_to_dict(hist), 200  # Kembalikan nama asli
 
 @csrf_exempt
 def post_stock_data(request):
@@ -109,7 +128,7 @@ def post_stock_data(request):
 
             # Menggunakan ThreadPoolExecutor untuk memproses beberapa saham secara paralel
             with ThreadPoolExecutor() as executor:
-                futures = [executor.submit(process_stock, item) for item in data]
+                futures = [executor.submit(process_asset, item) for item in data]
 
                 for future in as_completed(futures):
                     result = future.result()
@@ -130,3 +149,52 @@ def post_stock_data(request):
             return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+    
+@csrf_exempt
+def post_stock_id_data(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+
+            if not isinstance(data, list) or len(data) == 0:
+                return JsonResponse({'error': 'Payload must be a non-empty list'}, status=400)
+
+            # Tambahkan ".JK" pada setiap nama saham
+            updated_data = []
+            for item in data:
+                if isinstance(item, dict) and 'name' in item:
+                    item['name'] = f"{item['name']}.JK"  # Tambahkan ".JK" pada nama
+                updated_data.append(item)
+
+            # Panggil fungsi post_stock_data dengan payload yang telah dimodifikasi
+            return post_stock_data_with_updated_names(updated_data)
+
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+@csrf_exempt
+def post_crypto_data(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+
+            if not isinstance(data, list) or len(data) == 0:
+                return JsonResponse({'error': 'Payload must be a non-empty list'}, status=400)
+
+            # Tambahkan "-USD" pada setiap nama crypto
+            updated_data = []
+            for item in data:
+                if isinstance(item, dict) and 'name' in item:
+                    item['name'] = f"{item['name']}-USD"  # Tambahkan "-USD" pada nama
+                updated_data.append(item)
+
+            # Panggil fungsi post_stock_data dengan payload yang telah dimodifikasi
+            return post_stock_data_with_updated_names(updated_data)
+
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
+

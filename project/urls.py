@@ -20,5 +20,7 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('stock/us/', views.post_stock_data, name='postStockData'),
+    path('stock/id/', views.post_stock_id_data, name='post_stock_id'), 
+    path('crypto/', views.post_crypto_data, name='post_crypto_data_data'), 
 
 ]
