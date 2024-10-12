@@ -98,7 +98,7 @@ def process_asset(item):
 
     # Tentukan nama dan modifikasi sesuai jenis aset
     name = item['name']
-    original_name = item['name'].replace('.JK', '').replace("-USD","").replace("GC=F","GOLD")
+    original_name = item['name'].replace('.JK', '').replace("-USD","").replace("GC=F","GOLD").replace("=X","")
     start_date = item.get('start_date')
     end_date = item.get('end_date')
     period = item.get('period')
@@ -214,6 +214,32 @@ def post_gold_data(request):
                     updated_data.append(item)
 
             # Panggil fungsi untuk mengambil data emas
+            return post_stock_data_with_updated_names(updated_data)
+
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+@csrf_exempt
+def post_forex_data(request, currency1, currency2):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            print(f"{currency1}{currency2}=X")
+            if not isinstance(data, list) or len(data) == 0:
+                return JsonResponse({'error': 'Payload must be a non-empty list'}, status=400)
+
+        
+            ticker = f"{currency1}{currency2}=X"
+
+            updated_data = []
+            for item in data:
+                if isinstance(item, dict):
+                    item['name'] = ticker  
+                    updated_data.append(item)
+
+            # Panggil fungsi untuk mengambil data forex
             return post_stock_data_with_updated_names(updated_data)
 
         except json.JSONDecodeError:

@@ -23,5 +23,5 @@ urlpatterns = [
     path('stock/id/', views.post_stock_id_data, name='post_stock_id'), 
     path('crypto/', views.post_crypto_data, name='post_crypto_data_data'), 
     path('gold/', views.post_gold_data, name='post_crypto_data_data'), 
-
+    path('forex/<str:currency1>/<str:currency2>/', views.post_forex_data, name='post_forex_data'),
 ]
