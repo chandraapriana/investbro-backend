@@ -14,7 +14,6 @@ CACHE_TIMEOUT = 60 * 5  # 5 minutes
 
 # Function to validate stock input
 def validate_input(item):
-    print(item)
     name = item.get('name')
     start_date = item.get('start_date')
     end_date = item.get('end_date')
