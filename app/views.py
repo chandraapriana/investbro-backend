@@ -10,8 +10,6 @@ VALID_PERIODS = [
     "1d", "5d", "1mo", "3mo", "6mo", "1y", "2y", "5y", "10y", "ytd", "max"
 ]
 
-
-
 CACHE_TIMEOUT = 60 * 5  # Waktu cache selama 5 menit (300 detik)
 
 # Fungsi validasi input
@@ -100,7 +98,7 @@ def process_asset(item):
 
     # Tentukan nama dan modifikasi sesuai jenis aset
     name = item['name']
-    original_name = item['name'].replace('.JK', '').replace("-USD","") 
+    original_name = item['name'].replace('.JK', '').replace("-USD","").replace("GC=F","GOLD")
     start_date = item.get('start_date')
     end_date = item.get('end_date')
     period = item.get('period')
@@ -197,4 +195,28 @@ def post_crypto_data(request):
             return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+@csrf_exempt
+def post_gold_data(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
 
+            if not isinstance(data, list) or len(data) == 0:
+                return JsonResponse({'error': 'Payload must be a non-empty list'}, status=400)
+
+            # Hardcode ticker untuk emas
+            ticker = "GC=F"
+
+            updated_data = []
+            for item in data:
+                if isinstance(item, dict):
+                    item['name'] = ticker  # Gunakan ticker "GC=F"
+                    updated_data.append(item)
+
+            # Panggil fungsi untuk mengambil data emas
+            return post_stock_data_with_updated_names(updated_data)
+
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON payload'}, status=400)
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
