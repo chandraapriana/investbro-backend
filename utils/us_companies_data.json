@@ -1,0 +1,502 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AAPL.png"
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/NVDA.png"
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MSFT.png"
+  },
+  {
+    "ticker": "GOOG",
+    "name": "Alphabet (Google)",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/GOOG.png"
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.png"
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms (Facebook)",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/META.png"
+  },
+  {
+    "ticker": "BRK-B",
+    "name": "Berkshire Hathaway",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BRK-B.png"
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AVGO.png"
+  },
+  {
+    "ticker": "LLY",
+    "name": "Eli Lilly",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/LLY.png"
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/TSLA.png"
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/WMT.png"
+  },
+  {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/JPM.png"
+  },
+  {
+    "ticker": "UNH",
+    "name": "UnitedHealth",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/UNH.png"
+  },
+  {
+    "ticker": "XOM",
+    "name": "Exxon Mobil",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/XOM.png"
+  },
+  {
+    "ticker": "V",
+    "name": "Visa",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/V.png"
+  },
+  {
+    "ticker": "ORCL",
+    "name": "Oracle",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ORCL.png"
+  },
+  {
+    "ticker": "MA",
+    "name": "Mastercard",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MA.png"
+  },
+  {
+    "ticker": "HD",
+    "name": "Home Depot",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/HD.png"
+  },
+  {
+    "ticker": "PG",
+    "name": "Procter & Gamble",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PG.png"
+  },
+  {
+    "ticker": "COST",
+    "name": "Costco",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/COST.png"
+  },
+  {
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/JNJ.png"
+  },
+  {
+    "ticker": "ABBV",
+    "name": "AbbVie",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ABBV.png"
+  },
+  {
+    "ticker": "BAC",
+    "name": "Bank of America",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BAC.png"
+  },
+  {
+    "ticker": "NFLX",
+    "name": "Netflix",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/NFLX.png"
+  },
+  {
+    "ticker": "KO",
+    "name": "Coca-Cola",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/KO.png"
+  },
+  {
+    "ticker": "MRK",
+    "name": "Merck",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MRK.png"
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CRM.png"
+  },
+  {
+    "ticker": "CVX",
+    "name": "Chevron",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CVX.png"
+  },
+  {
+    "ticker": "AMD",
+    "name": "AMD",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AMD.png"
+  },
+  {
+    "ticker": "TMUS",
+    "name": "T-Mobile US",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/TMUS.png"
+  },
+  {
+    "ticker": "PEP",
+    "name": "Pepsico",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PEP.png"
+  },
+  {
+    "ticker": "TMO",
+    "name": "Thermo Fisher Scientific",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/TMO.png"
+  },
+  {
+    "ticker": "MCD",
+    "name": "McDonald",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MCD.png"
+  },
+  {
+    "ticker": "ADBE",
+    "name": "Adobe",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ADBE.png"
+  },
+  {
+    "ticker": "CSCO",
+    "name": "Cisco",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CSCO.png"
+  },
+  {
+    "ticker": "IBM",
+    "name": "IBM",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/IBM.png"
+  },
+  {
+    "ticker": "WFC",
+    "name": "Wells Fargo",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/WFC.png"
+  },
+  {
+    "ticker": "GE",
+    "name": "General Electric",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/GE.png"
+  },
+  {
+    "ticker": "ABT",
+    "name": "Abbott Laboratories",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ABT.png"
+  },
+  {
+    "ticker": "AXP",
+    "name": "American Express",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AXP.png"
+  },
+  {
+    "ticker": "DHR",
+    "name": "Danaher",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/DHR.png"
+  },
+  {
+    "ticker": "CAT",
+    "name": "Caterpillar",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CAT.png"
+  },
+  {
+    "ticker": "NOW",
+    "name": "ServiceNow",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/NOW.png"
+  },
+  {
+    "ticker": "QCOM",
+    "name": "QUALCOMM",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/QCOM.png"
+  },
+  {
+    "ticker": "TXN",
+    "name": "Texas Instruments",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/TXN.png"
+  },
+  {
+    "ticker": "PM",
+    "name": "Philip Morris",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PM.png"
+  },
+  {
+    "ticker": "UBER",
+    "name": "Uber",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/UBER.png"
+  },
+  {
+    "ticker": "VZ",
+    "name": "Verizon",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/VZ.png"
+  },
+  {
+    "ticker": "MS",
+    "name": "Morgan Stanley",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MS.png"
+  },
+  {
+    "ticker": "AMGN",
+    "name": "Amgen",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AMGN.png"
+  },
+  {
+    "ticker": "INTU",
+    "name": "Intuit",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/INTU.png"
+  },
+  {
+    "ticker": "ISRG",
+    "name": "Intuitive Surgical",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ISRG.png"
+  },
+  {
+    "ticker": "DIS",
+    "name": "Walt Disney",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/DIS.png"
+  },
+  {
+    "ticker": "AMAT",
+    "name": "Applied Materials",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AMAT.png"
+  },
+  {
+    "ticker": "NEE",
+    "name": "Nextera Energy",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/NEE.png"
+  },
+  {
+    "ticker": "PFE",
+    "name": "Pfizer",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PFE.png"
+  },
+  {
+    "ticker": "RTX",
+    "name": "Raytheon Technologies",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/RTX.png"
+  },
+  {
+    "ticker": "SPGI",
+    "name": "S&P Global",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/SPGI.png"
+  },
+  {
+    "ticker": "GS",
+    "name": "Goldman Sachs",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/GS.png"
+  },
+  {
+    "ticker": "CMCSA",
+    "name": "Comcast",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CMCSA.png"
+  },
+  {
+    "ticker": "LOW",
+    "name": "Lowe's Companies",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/LOW.png"
+  },
+  {
+    "ticker": "T",
+    "name": "AT&T",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/T.png"
+  },
+  {
+    "ticker": "PGR",
+    "name": "Progressive",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PGR.png"
+  },
+  {
+    "ticker": "UNP",
+    "name": "Union Pacific Corporation",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/UNP.png"
+  },
+  {
+    "ticker": "BLK",
+    "name": "BlackRock",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BLK.png"
+  },
+  {
+    "ticker": "LMT",
+    "name": "Lockheed Martin",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/LMT.png"
+  },
+  {
+    "ticker": "BKNG",
+    "name": "Booking Holdings (Booking.com)",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BKNG.png"
+  },
+  {
+    "ticker": "HON",
+    "name": "Honeywell",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/HON.png"
+  },
+  {
+    "ticker": "SYK",
+    "name": "Stryker Corporation",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/SYK.png"
+  },
+  {
+    "ticker": "ANET",
+    "name": "Arista Networks",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ANET.png"
+  },
+  {
+    "ticker": "COP",
+    "name": "ConocoPhillips",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/COP.png"
+  },
+  {
+    "ticker": "TJX",
+    "name": "TJX Companies",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/TJX.png"
+  },
+  {
+    "ticker": "BSX",
+    "name": "Boston Scientific",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BSX.png"
+  },
+  {
+    "ticker": "C",
+    "name": "Citigroup",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/C.png"
+  },
+  {
+    "ticker": "KKR",
+    "name": "KKR & Co.",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/KKR.png"
+  },
+  {
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/VRTX.png"
+  },
+  {
+    "ticker": "SCHW",
+    "name": "Charles Schwab",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/SCHW.png"
+  },
+  {
+    "ticker": "NKE",
+    "name": "Nike",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/NKE.png"
+  },
+  {
+    "ticker": "PANW",
+    "name": "Palo Alto Networks",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PANW.png"
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MU.png"
+  },
+  {
+    "ticker": "ADP",
+    "name": "Automatic Data Processing",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ADP.png"
+  },
+  {
+    "ticker": "ELV",
+    "name": "Elevance Health",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ELV.png"
+  },
+  {
+    "ticker": "ADI",
+    "name": "Analog Devices",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/ADI.png"
+  },
+  {
+    "ticker": "UPS",
+    "name": "United Parcel Service",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/UPS.png"
+  },
+  {
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/DE.png"
+  },
+  {
+    "ticker": "REGN",
+    "name": "Regeneron Pharmaceuticals",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/REGN.png"
+  },
+  {
+    "ticker": "PLD",
+    "name": "Prologis",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PLD.png"
+  },
+  {
+    "ticker": "MMC",
+    "name": "Marsh & McLennan Companies",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/MMC.png"
+  },
+  {
+    "ticker": "BX",
+    "name": "Blackstone Group",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BX.png"
+  },
+  {
+    "ticker": "FI",
+    "name": "Fiserv",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/FI.png"
+  },
+  {
+    "ticker": "SBUX",
+    "name": "Starbucks",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/SBUX.png"
+  },
+  {
+    "ticker": "KLAC",
+    "name": "KLA",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/KLAC.png"
+  },
+  {
+    "ticker": "LRCX",
+    "name": "Lam Research",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/LRCX.png"
+  },
+  {
+    "ticker": "BMY",
+    "name": "Bristol-Myers Squibb",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/BMY.png"
+  },
+  {
+    "ticker": "GILD",
+    "name": "Gilead Sciences",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/GILD.png"
+  },
+  {
+    "ticker": "AMT",
+    "name": "American Tower",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/AMT.png"
+  },
+  {
+    "ticker": "HCA",
+    "name": "HCA Healthcare",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/HCA.png"
+  },
+  {
+    "ticker": "INTC",
+    "name": "Intel",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/INTC.png"
+  },
+  {
+    "ticker": "CI",
+    "name": "Cigna",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/CI.png"
+  },
+  {
+    "ticker": "PLTR",
+    "name": "Palantir",
+    "logo": "https://companiesmarketcap.com/img/company-logos/64/PLTR.png"
+  }
+]

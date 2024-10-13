@@ -1,0 +1,502 @@
+[
+  {
+    "ticker": "BTC",
+    "name": "Bitcoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/btc.png"
+  },
+  {
+    "ticker": "ETH",
+    "name": "Ethereum",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/eth.png"
+  },
+  {
+    "ticker": "USDT",
+    "name": "Tether USDt",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/usdt.png"
+  },
+  {
+    "ticker": "BNB",
+    "name": "BNB",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/bnb.png"
+  },
+  {
+    "ticker": "SOL",
+    "name": "Solana",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/sol.png"
+  },
+  {
+    "ticker": "USDC",
+    "name": "USDC",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/usdc.png"
+  },
+  {
+    "ticker": "XRP",
+    "name": "XRP",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/xrp.png"
+  },
+  {
+    "ticker": "DOGE",
+    "name": "Dogecoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/doge.png"
+  },
+  {
+    "ticker": "TRX",
+    "name": "TRON",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/trx.png"
+  },
+  {
+    "ticker": "TON",
+    "name": "Toncoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ton.png"
+  },
+  {
+    "ticker": "ADA",
+    "name": "Cardano",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ada.png"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "Avalanche",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/avax.png"
+  },
+  {
+    "ticker": "SHIB",
+    "name": "Shiba Inu",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/shib.png"
+  },
+  {
+    "ticker": "LINK",
+    "name": "Chainlink",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/link.png"
+  },
+  {
+    "ticker": "BCH",
+    "name": "Bitcoin Cash",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/bch.png"
+  },
+  {
+    "ticker": "DOT",
+    "name": "Polkadot",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/dot.png"
+  },
+  {
+    "ticker": "SUI",
+    "name": "Sui",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/sui.png"
+  },
+  {
+    "ticker": "NEAR",
+    "name": "NEAR Protocol",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/near.png"
+  },
+  {
+    "ticker": "LEO",
+    "name": "UNUS SED LEO",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/leo.png"
+  },
+  {
+    "ticker": "DAI",
+    "name": "Dai",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/dai.png"
+  },
+  {
+    "ticker": "APT",
+    "name": "Aptos",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/apt.png"
+  },
+  {
+    "ticker": "LTC",
+    "name": "Litecoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ltc.png"
+  },
+  {
+    "ticker": "UNI",
+    "name": "Uniswap",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/uni.png"
+  },
+  {
+    "ticker": "TAO",
+    "name": "Bittensor",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/tao.png"
+  },
+  {
+    "ticker": "PEPE",
+    "name": "Pepe",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/pepe.png"
+  },
+  {
+    "ticker": "ICP",
+    "name": "Internet Computer",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/icp.png"
+  },
+  {
+    "ticker": "FET",
+    "name": "Artificial Superintelligence Alliance",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/fet.png"
+  },
+  {
+    "ticker": "KAS",
+    "name": "Kaspa",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/kas.png"
+  },
+  {
+    "ticker": "FDUSD",
+    "name": "First Digital USD",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/fdusd.png"
+  },
+  {
+    "ticker": "XMR",
+    "name": "Monero",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/xmr.png"
+  },
+  {
+    "ticker": "POL",
+    "name": "POL (ex-MATIC)",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/pol.png"
+  },
+  {
+    "ticker": "WIF",
+    "name": "dogwifhat",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/wif.png"
+  },
+  {
+    "ticker": "ETC",
+    "name": "Ethereum Classic",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/etc.png"
+  },
+  {
+    "ticker": "RENDER",
+    "name": "Render",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/render.png"
+  },
+  {
+    "ticker": "XLM",
+    "name": "Stellar",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/xlm.png"
+  },
+  {
+    "ticker": "STX",
+    "name": "Stacks",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/stx.png"
+  },
+  {
+    "ticker": "OKB",
+    "name": "OKB",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/okb.png"
+  },
+  {
+    "ticker": "IMX",
+    "name": "Immutable",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/imx.png"
+  },
+  {
+    "ticker": "AAVE",
+    "name": "Aave",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/aave.png"
+  },
+  {
+    "ticker": "OP",
+    "name": "Optimism",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/op.png"
+  },
+  {
+    "ticker": "FIL",
+    "name": "Filecoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/fil.png"
+  },
+  {
+    "ticker": "CRO",
+    "name": "Cronos",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/cro.png"
+  },
+  {
+    "ticker": "INJ",
+    "name": "Injective",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/inj.png"
+  },
+  {
+    "ticker": "MNT",
+    "name": "Mantle",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/mnt.png"
+  },
+  {
+    "ticker": "FTM",
+    "name": "Fantom",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ftm.png"
+  },
+  {
+    "ticker": "ARB",
+    "name": "Arbitrum",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/arb.png"
+  },
+  {
+    "ticker": "HBAR",
+    "name": "Hedera",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/hbar.png"
+  },
+  {
+    "ticker": "VET",
+    "name": "VeChain",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/vet.png"
+  },
+  {
+    "ticker": "SEI",
+    "name": "Sei",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/sei.png"
+  },
+  {
+    "ticker": "ATOM",
+    "name": "Cosmos",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/atom.png"
+  },
+  {
+    "ticker": "RUNE",
+    "name": "THORChain",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/rune.png"
+  },
+  {
+    "ticker": "GRT",
+    "name": "The Graph",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/grt.png"
+  },
+  {
+    "ticker": "BONK",
+    "name": "Bonk",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/bonk.png"
+  },
+  {
+    "ticker": "BGB",
+    "name": "Bitget Token",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/bgb.png"
+  },
+  {
+    "ticker": "POPCAT",
+    "name": "Popcat (SOL)",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/popcat.png"
+  },
+  {
+    "ticker": "FLOKI",
+    "name": "FLOKI",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/floki.png"
+  },
+  {
+    "ticker": "TIA",
+    "name": "Celestia",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/tia.png"
+  },
+  {
+    "ticker": "THETA",
+    "name": "Theta Network",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/theta.png"
+  },
+  {
+    "ticker": "AR",
+    "name": "Arweave",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ar.png"
+  },
+  {
+    "ticker": "OM",
+    "name": "MANTRA",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/om.png"
+  },
+  {
+    "ticker": "MKR",
+    "name": "Maker",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/mkr.png"
+  },
+  {
+    "ticker": "PYTH",
+    "name": "Pyth Network",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/pyth.png"
+  },
+  {
+    "ticker": "HNT",
+    "name": "Helium",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/hnt.png"
+  },
+  {
+    "ticker": "JUP",
+    "name": "Jupiter",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/jup.png"
+  },
+  {
+    "ticker": "WLD",
+    "name": "Worldcoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/wld.png"
+  },
+  {
+    "ticker": "ALGO",
+    "name": "Algorand",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/algo.png"
+  },
+  {
+    "ticker": "MATIC",
+    "name": "Polygon",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/matic.png"
+  },
+  {
+    "ticker": "KCS",
+    "name": "KuCoin Token",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/kcs.png"
+  },
+  {
+    "ticker": "ONDO",
+    "name": "Ondo",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ondo.png"
+  },
+  {
+    "ticker": "BRETT",
+    "name": "Brett (Based)",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/brett.png"
+  },
+  {
+    "ticker": "JASMY",
+    "name": "JasmyCoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/jasmy.png"
+  },
+  {
+    "ticker": "LDO",
+    "name": "Lido DAO",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ldo.png"
+  },
+  {
+    "ticker": "ENA",
+    "name": "Ethena",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ena.png"
+  },
+  {
+    "ticker": "BSV",
+    "name": "Bitcoin SV",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/bsv.png"
+  },
+  {
+    "ticker": "BTT",
+    "name": "BitTorrent [New]",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/btt.png"
+  },
+  {
+    "ticker": "CORE",
+    "name": "Core",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/core.png"
+  },
+  {
+    "ticker": "FLOW",
+    "name": "Flow",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/flow.png"
+  },
+  {
+    "ticker": "STRK",
+    "name": "Starknet",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/strk.png"
+  },
+  {
+    "ticker": "NEIRO",
+    "name": "First Neiro On Ethereum",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/neiro.png"
+  },
+  {
+    "ticker": "GT",
+    "name": "GateToken",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/gt.png"
+  },
+  {
+    "ticker": "W",
+    "name": "Wormhole",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/w.png"
+  },
+  {
+    "ticker": "NOT",
+    "name": "Notcoin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/not.png"
+  },
+  {
+    "ticker": "QNT",
+    "name": "Quant",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/qnt.png"
+  },
+  {
+    "ticker": "CFX",
+    "name": "Conflux",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/cfx.png"
+  },
+  {
+    "ticker": "BEAM",
+    "name": "Beam",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/beam.png"
+  },
+  {
+    "ticker": "GALA",
+    "name": "Gala",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/gala.png"
+  },
+  {
+    "ticker": "ORDI",
+    "name": "ORDI",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ordi.png"
+  },
+  {
+    "ticker": "USDD",
+    "name": "USDD",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/usdd.png"
+  },
+  {
+    "ticker": "EGLD",
+    "name": "MultiversX",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/egld.png"
+  },
+  {
+    "ticker": "MOG",
+    "name": "Mog Coin",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/mog.png"
+  },
+  {
+    "ticker": "NEO",
+    "name": "Neo",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/neo.png"
+  },
+  {
+    "ticker": "FLR",
+    "name": "Flare",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/flr.png"
+  },
+  {
+    "ticker": "EOS",
+    "name": "EOS",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/eos.png"
+  },
+  {
+    "ticker": "AXS",
+    "name": "Axie Infinity",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/axs.png"
+  },
+  {
+    "ticker": "CHZ",
+    "name": "Chiliz",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/chz.png"
+  },
+  {
+    "ticker": "XTZ",
+    "name": "Tezos",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/xtz.png"
+  },
+  {
+    "ticker": "FTT",
+    "name": "FTX Token",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ftt.png"
+  },
+  {
+    "ticker": "CKB",
+    "name": "Nervos Network",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/ckb.png"
+  },
+  {
+    "ticker": "XEC",
+    "name": "eCash",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/xec.png"
+  },
+  {
+    "ticker": "MINA",
+    "name": "Mina",
+    "logo": "https://api.investbroz.com/static/images/crypto_logos/mina.png"
+  }
+]

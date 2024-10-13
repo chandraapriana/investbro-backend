@@ -5,6 +5,10 @@ import yfinance as yf
 import json
 import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from utils.crypto_data import crypto_data
+from utils.us_companies_data import us_companies_data
+from utils.id_companies_data import id_companies_data
+
 
 # Constants
 VALID_PERIODS = ["1d", "5d", "1mo", "3mo", "6mo", "1y", "2y", "5y", "10y", "ytd", "max"]
@@ -178,3 +182,12 @@ def post_gold_data(request):
 def post_forex_data(request, currency1, currency2):
     ticker = f"{currency1}{currency2}=X"
     return set_ticker_directly_or_append_suffix(request, ticker=ticker)
+@csrf_exempt
+def get_crypto_ticker_list(request):
+    return JsonResponse(crypto_data, safe=False)
+@csrf_exempt
+def get_us_stock_ticker_list(request):
+    return JsonResponse(us_companies_data, safe=False)
+@csrf_exempt
+def get_id_stock_ticker_list(request):
+    return JsonResponse(id_companies_data, safe=False)

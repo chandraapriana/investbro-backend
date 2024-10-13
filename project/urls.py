@@ -24,4 +24,7 @@ urlpatterns = [
     path('crypto/', views.post_crypto_data, name='post_crypto_data_data'), 
     path('gold/', views.post_gold_data, name='post_crypto_data_data'), 
     path('forex/<str:currency1>/<str:currency2>/', views.post_forex_data, name='post_forex_data'),
+    path('crypto/ticker-list/', views.get_crypto_ticker_list, name='crypto_ticker_list'),
+    path('stock/id/ticker-list/', views.get_id_stock_ticker_list, name='us_stock_ticker_list'),
+    path('stock/us/ticker-list/', views.get_us_stock_ticker_list, name='id_stock_ticker_list'),
 ]
