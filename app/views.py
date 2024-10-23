@@ -162,8 +162,12 @@ def set_ticker_directly_or_append_suffix(request, ticker=None, suffix=None):
             if ticker:
                 item['name'] = ticker  # Set ticker directly (for gold or specific assets)
             elif suffix:
-                item['name'] = f"{item['name']}{suffix}"  # Append suffix (for stock/forex)
+                if "^" in item["name"]:
+                    item['name'] = item['name']  # No change if "^" is in the name
+                else:
+                    item['name'] = f"{item['name']}{suffix}"  # Append suffix if "^" is not in the name
 
+    print(data)
     return post_stock_data_with_updated_names(data)
 
 @csrf_exempt
