@@ -1,6 +1,11 @@
 from decouple import config
 id_companies_data = [
   {
+    "ticker": "^JKSE",
+    "name": "IDX COMPOSITE",
+    "logo": config('BASE_URL')+"/static/images/us_company_logos/AAPL.png"
+  },
+  {
     "ticker": "BBCA",
     "name": "Bank Central Asia",
     "logo": config('BASE_URL')+"/static/images/id_company_logos/BBCA.png"

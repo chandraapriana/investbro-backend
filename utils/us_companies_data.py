@@ -1,6 +1,16 @@
 from decouple import config
 us_companies_data = [
   {
+    "ticker": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "logo": config('BASE_URL')+"/static/images/us_company_logos/AAPL.png"
+  },
+  {
+    "ticker": "^GSPC",
+    "name": "S&P 500",
+    "logo": config('BASE_URL')+"/static/images/us_company_logos/AAPL.png"
+  },
+  {
     "ticker": "AAPL",
     "name": "Apple",
     "logo": config('BASE_URL')+"/static/images/us_company_logos/AAPL.png"
