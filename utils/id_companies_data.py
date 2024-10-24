@@ -3,7 +3,7 @@ id_companies_data = [
   {
     "ticker": "^JKSE",
     "name": "IDX COMPOSITE",
-    "logo": config('BASE_URL')+"/static/images/us_company_logos/AAPL.png"
+    "logo": config('BASE_URL')+"/static/images/id_company_logos/ID.png"
   },
   {
     "ticker": "BBCA",
