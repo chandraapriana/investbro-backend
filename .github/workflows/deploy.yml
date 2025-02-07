@@ -17,18 +17,15 @@ jobs:
       # Build Docker Image
       - name: Build Docker Image
         run: |
-          docker build -t api-investbro .
+          docker build -t ${{ secrets.APP_NAME }} .
 
-      # Save the Docker Image as a tar file
-      - name: Save Docker Image
+      # Login to CapRover Server
+      - name: Login to CapRover
         run: |
-          docker save api-investbro -o deploy.tar
+          npm install -g caprover
+          caprover login --caprover-url "${{ secrets.SERVER }}" --caprover-password "${{ secrets.APP_TOKEN }}"
 
-      # Deploy to CapRover
-      - name: Deploy App to CapRover
-        uses: caprover/deploy-from-github@v1.0.1
-        with:
-          server: "${{ secrets.SERVER }}"
-          app: "${{ secrets.APP_NAME }}"
-          token: "${{ secrets.APP_TOKEN }}"
-          image: "api-investbro"
+      # Push Docker Image to CapRover
+      - name: Push Image to CapRover
+        run: |
+          caprover deploy --caprover-app "${{ secrets.APP_NAME }}" --caprover-force-rebuild
