@@ -1,0 +1,29 @@
+name: Deploy Django to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Build Docker Image
+        run: |
+          docker build -t api-investbro .
+
+      - name: Push to Server
+        run: |
+          docker login ${{ secrets.DOMAIN }}:996 -u captain -p ${{ secrets.PASSWORD }}
+          docker tag api-investbro ${{ secrets.DOMAIN }}:996/api-investbro
+          docker push ${{ secrets.DOMAIN }}:996/api-investbro
+
+      - name: Deploy to Server
+        run: |
+          curl -X POST "https://${{ secrets.DOMAIN }}/captain/apps/api-investbro/deploy" \
+          -H "X-Captain-Auth: ${{ secrets.PASSWORD }}"
