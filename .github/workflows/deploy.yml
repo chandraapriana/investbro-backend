@@ -30,4 +30,5 @@ jobs:
           caprover deploy \
             -h "${{ secrets.SERVER }}" \
             -p "${{ secrets.APP_TOKEN }}" \
+            main \
             -a "${{ secrets.APP_NAME }}"
