@@ -16,10 +16,18 @@ jobs:
       - name: Install CapRover CLI
         run: npm install -g caprover
 
-      # Deploy ke CapRover menggunakan CLI
+      # Pastikan captain-definition.json ada di root project
+      - name: Verify captain-definition.json
+        run: |
+          if [ ! -f captain-definition ]; then
+            echo "Captain definition file is missing!"
+            exit 1
+          fi
+
+      # Deploy ke CapRover dengan CLI
       - name: Deploy App to CapRover
         run: |
           caprover deploy \
-            --caprover-url "${{ secrets.SERVER }}" \
-            --caprover-app "${{ secrets.APP_NAME }}" \
-            --caprover-password "${{ secrets.APP_TOKEN }}"
+            -h "${{ secrets.SERVER }}" \
+            -p "${{ secrets.APP_TOKEN }}" \
+            -a "${{ secrets.APP_NAME }}"
