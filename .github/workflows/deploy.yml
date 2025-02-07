@@ -14,21 +14,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Login to CapRover Docker Registry
+      - name: Log in to CapRover Docker Registry
+        run: echo "${{ secrets.APP_TOKEN }}" | docker login ${{ secrets.SERVER }} -u captain --password-stdin
+
       # Build Docker Image
       - name: Build Docker Image
-        run: |
-          docker build -t api-investbro .
+        run: docker build -t ${{ secrets.SERVER }}/captain/${{ secrets.APP_NAME }} .
 
-      # Save the Docker Image as a tar file
-      - name: Save Docker Image
-        run: |
-          docker save api-investbro -o deploy.tar
+      # Push Docker Image to CapRover
+      - name: Push Docker Image
+        run: docker push ${{ secrets.SERVER }}/captain/${{ secrets.APP_NAME }}
 
-      # Deploy to CapRover
-      - name: Deploy App to CapRover
-        uses: caprover/deploy-from-github@v1.0.1
-        with:
-          server: "${{ secrets.SERVER }}"
-          app: "${{ secrets.APP_NAME }}"
-          token: "${{ secrets.APP_TOKEN }}"
-          image: "api-investbro"
+      # Deploy App in CapRover
+      - name: Trigger Deployment in CapRover
+        run: |
+          curl -X POST "${{ secrets.SERVER }}/api/v2/user/apps/appData" \
+            -H "x-namespace: captain" \
+            -H "x-captain-auth: ${{ secrets.APP_TOKEN }}" \
+            -d '{ "appName": "${{ secrets.APP_NAME }}", "newVersion": "latest" }'
