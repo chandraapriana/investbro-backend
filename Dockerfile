@@ -4,6 +4,7 @@ FROM python:3.11
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV PORT 8080
 
 # Set the working directory
 WORKDIR /app
@@ -23,8 +24,8 @@ COPY . .
 # Collect static files
 RUN mkdir -p /app/staticfiles && python manage.py collectstatic --noinput
 
-# Expose port 8000 for the app
-EXPOSE 8000
+# Expose port from environment variable with fallback to 8080
+EXPOSE ${PORT}
 
-# Run the application with Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "project.wsgi:application"]
+# Run the application with Gunicorn using the PORT environment variable
+CMD exec gunicorn --bind 0.0.0.0:${PORT} project.wsgi:application
